@@ -13,12 +13,13 @@ body {
 .footer {
   margin-top: 1rem;
   padding: 1rem;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     180deg,
     #d9042d 0%,
     #91033b 47.4%,
     #520651 100%
-  );
+  ); */
+  background-color: white;
   position: fixed;
   bottom: 0;
   /* left: 0; */
@@ -26,4 +27,19 @@ body {
   max-width: 1500px;
   align-content: center;
   margin: 0 auto;
+  height: 35.05961251862891vh;
+  max-height: 30%;
+}
+.footer-logo-text {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 148.99%;
+  /* or 27px */
+
+  display: flex;
+  align-items: flex-end;
+
+  color: #3d3d3d;
 }
