@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Switch } from "react-router-dom";
-import Footer from "../components/Footer";
 import { PrivateRoutes } from "./PrivateRoutes";
 
 export function Routes() {
@@ -10,7 +9,6 @@ export function Routes() {
       {isAuthorized ? (
         <>
           <PrivateRoutes />
-          <Footer />
         </>
       ) : (
         <PrivateRoutes />

@@ -1,17 +1,21 @@
 import React from "react";
 import Footer from "../../components/Footer";
+import Header from "../../components/Header";
 
 const Waitlist = () => {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        paddingBottom: "3.5rem",
-      }}
-    >
-      
-    </div>
+    <>
+      <Header />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          // paddingTop: "3.5rem",
+          paddingBottom: "3.5rem",
+        }}
+      ></div>
+      <Footer />
+    </>
   );
 };
 

@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 
 const Footer = () => (
   <div className="footer">
-    <Container sty>
+    <Container>
       <Row style={styles.row}>
         <Col xs={12} md={10} style={styles.col}>
           <div
