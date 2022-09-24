@@ -1,0 +1,99 @@
+.pageBody {
+  display: flex;
+  padding-bottom: 3.5rem;
+  /* justify-content: center;
+  align-items: center; */
+}
+.joinWaitlist {
+  background-image: linear-gradient(
+    180deg,
+    #d9042d 0%,
+    #91033b 47.4%,
+    #520651 100%
+  );
+  width: 100%;
+  height: 377px;
+}
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+.text-white {
+  color: white;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 130.99%;
+  text-decoration: none;
+  text-align: center;
+  width: 532px;
+}
+.joinWaitlistText {
+  font-family: "Rota";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 60px;
+  display: flex;
+  align-items: flex-end;
+  text-decoration: none;
+  color: #ffffff;
+}
+input {
+  color: rgba(109, 20, 74, 0.57);
+  border-radius: 40px;
+  background: hsl(0, 0%, 100%);
+  border: white;
+  border-style: solid;
+  outline: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  /* text-align: center; */
+  text-align: left;
+  padding-left: 5%;
+  color: #91033b;
+  width: 326px;
+  height: 63px;
+  /* display: flex;
+  align-items: flex-start; */
+}
+
+::placeholder {
+  color: rgba(109, 20, 74, 0.57);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgba(109, 20, 74, 0.57);
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgba(109, 20, 74, 0.57);
+  opacity: 1; /* Firefox */
+}
+.submit-button {
+  width: 179px;
+  height: 63px;
+  border-radius: 40px;
+}
+.submit-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.products{
+  
+}
