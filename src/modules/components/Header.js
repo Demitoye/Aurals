@@ -6,9 +6,9 @@ import Button from "react-bootstrap/Button";
 
 const Header = () => (
   <div className="header">
-    <Container>
+    <div>
       <Row style={styles.row}>
-        <Col xs={10} md={8} style={styles.col}>
+        <Col xs={12} md={8} style={styles.col}>
           <div
             style={{ display: "flex", flexDirection: "column", marginLeft: 0 }}
           >
@@ -24,7 +24,7 @@ const Header = () => (
             ...styles.col2,
           }}
         >
-          <div>
+          <div style={{display:'flex'}}>
             <button>
               <span className="button-text">Blog</span>
             </button>
@@ -34,7 +34,7 @@ const Header = () => (
           </div>
         </Col>
       </Row>
-    </Container>
+    </div>
   </div>
 );
 
@@ -53,6 +53,7 @@ const styles = {
     display: "flex",
     justifyContent: "flex-start",
     alignItems: "center",
+    marginRight: "5%",
   },
   col2: {
     paddingLeft: 0,

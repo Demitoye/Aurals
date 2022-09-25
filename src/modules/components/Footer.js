@@ -5,16 +5,19 @@ import Col from "react-bootstrap/Col";
 
 const Footer = () => (
   <div className="footer">
-    <Container>
+    <div className="center">
       <Row style={styles.row}>
         <Col xs={12} md={10} style={styles.col}>
           <div
             style={{ display: "flex", flexDirection: "column", marginLeft: 0 }}
           >
-            <img
-              src={"/assets/logo.svg"}
-              style={{ width: 145, height: 46, marginLeft: 0 }}
-            />
+            <div>
+              <img
+                src={"/assets/logo.svg"}
+                style={{ height: 46, marginLeft: 0 }}
+              />
+            </div>
+
             <span>
               <p className="footer-logo-text">
                 Lorem lorem lorem lorem lorem lorem
@@ -22,7 +25,7 @@ const Footer = () => (
             </span>
           </div>
         </Col>
-        <Col
+        <Col 
           style={{ ...styles.col2, display: "flex", alignItems: "flex-start" }}
         >
           <span>
@@ -50,7 +53,7 @@ const Footer = () => (
           &copy; {new Date().getFullYear()} aurals. All Rights Reserved
         </p>
       </div>
-    </Container>
+    </div>
   </div>
 );
 
@@ -62,15 +65,14 @@ const styles = {
   row: {
     marginLeft: 0,
     marginRight: 0,
-    marginBottom: "3%",
-    display: "flex",
-    justifyContent: "center",
+    marginBottom: "0.5%",
   },
   col: {
     paddingLeft: 3,
     paddingRight: 3,
     justifyContent: "center",
     alignItems: "center",
+    marginRight: "5%",
   },
   col2: {
     paddingLeft: 3,
@@ -81,12 +83,12 @@ const styles = {
   followUS: {
     color: "#3F043F",
     fontWeight: "700",
-    fontSize: 24,
+    fontSize: 23,
   },
   copyRight: {
     color: "#3F043F",
     fontWeight: "700",
-    fontSize: 16,
+    fontSize: 15,
   },
 };
 
