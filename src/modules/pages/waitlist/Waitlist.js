@@ -40,10 +40,44 @@ const Waitlist = () => {
       desc: "",
     },
   ];
+
   return (
     <>
       <Header />
       <div className="pageBody">
+        <div className="intro">
+          <div className="intro-content">
+            <div>
+              <a className="joinWaitlistText mb-2">LAUNCHING SOON</a>
+              <span className="intro-subText">
+                A Decentralized Music Ecosystem For Music Creatives And
+                Collectors
+              </span>
+            </div>
+
+            <div>
+              <div style={{ position: "relative", left: 0, top: 0 }}>
+                <img
+                  src="https://dummyimage.com/600x400/ccc/fff"
+                  class="another-rec"
+                />
+
+                <img
+                  src="https://dummyimage.com/600x400/000/fff"
+                  class="rect"
+                />
+              </div>
+            </div>
+
+            {/* <div className="m-4">
+              <input className="input m-1" placeholder="Email address" />
+              <button className="submit-button m-1">
+                <span className="button-text submit-text">Submit</span>
+              </button>
+            </div> */}
+          </div>
+        </div>
+
         <div className="products m-5">
           <a className="products-header mb-2">Products</a>
 
@@ -67,12 +101,7 @@ const Waitlist = () => {
                 <div className="me-3 ms-3">
                   <img
                     src={arrow && productNo === index ? Down : Up}
-                    style={{
-                      width: 22,
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                    }}
+                    className="products-arrow"
                     onClick={() => handleProducts(index)}
                   />
                 </div>
