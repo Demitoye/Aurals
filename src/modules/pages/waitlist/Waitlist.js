@@ -4,6 +4,9 @@ import Header from "../../components/Header";
 import "./styles.css";
 import Up from "../../../assets/arrowUp.svg";
 import Down from "../../../assets/arrowDown.svg";
+import NFT1 from "../../../assets/imgs/NFT.png";
+import NFT2 from "../../../assets/imgs/NFT2.png";
+
 const Waitlist = () => {
   const [arrow, setArrow] = useState(true);
   const [productNo, setProductNo] = useState(0);
@@ -48,24 +51,19 @@ const Waitlist = () => {
         <div className="intro">
           <div className="intro-content">
             <div>
-              <a className="joinWaitlistText mb-2">LAUNCHING SOON</a>
+              <span className="joinWaitlistText mb-2">LAUNCHING SOON</span>
               <span className="intro-subText">
                 A Decentralized Music Ecosystem For Music Creatives And
                 Collectors
               </span>
             </div>
 
-            <div>
+            <div className="m-5">
               <div style={{ position: "relative", left: 0, top: 0 }}>
-                <img
-                  src="https://dummyimage.com/600x400/ccc/fff"
-                  class="another-rec"
-                />
-
-                <img
-                  src="https://dummyimage.com/600x400/000/fff"
-                  class="rect"
-                />
+                <div></div>
+                <img src={NFT1} class="another-rec" />
+                <div></div>
+                <img src={NFT2} class="rect" />
               </div>
             </div>
 
@@ -112,7 +110,7 @@ const Waitlist = () => {
 
         <div className="joinWaitlist">
           <div className="center-content">
-            <a className="joinWaitlistText mb-2">Join our Waitlist</a>
+            <span className="joinWaitlistText mb-2">Join our Waitlist</span>
             <a className="text-white mb-2">
               Sign up to receive early updates on announcements, testnet, new
               collections
