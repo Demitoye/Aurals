@@ -6,6 +6,9 @@ import Up from "../../../assets/arrowUp.svg";
 import Down from "../../../assets/arrowDown.svg";
 import NFT1 from "../../../assets/imgs/NFT.png";
 import NFT2 from "../../../assets/imgs/NFT2.png";
+import Musics from "../../../assets/imgs/music.png";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 const Waitlist = () => {
   const [arrow, setArrow] = useState(true);
@@ -50,7 +53,7 @@ const Waitlist = () => {
       <div className="pageBody">
         <div className="intro">
           <div className="intro-content">
-            <div>
+            <div className="m-4">
               <span className="joinWaitlistText mb-2">LAUNCHING SOON</span>
               <span className="intro-subText">
                 A Decentralized Music Ecosystem For Music Creatives And
@@ -60,8 +63,9 @@ const Waitlist = () => {
 
             <div className="m-5">
               <div style={{ position: "relative", left: 0, top: 0 }}>
-                <div></div>
-                <img src={NFT1} class="another-rec" />
+                <div style={{ background: "red", margin: "10%" }}>
+                  <img src={NFT1} class="another-rec" />
+                </div>
                 <div></div>
                 <img src={NFT2} class="rect" />
               </div>
@@ -76,7 +80,9 @@ const Waitlist = () => {
           </div>
         </div>
 
-        <div className="products m-5">
+        <img src={Musics} class="musics" />
+
+        <div className="products mt-5 mb-5 ms-3 me-3">
           <a className="products-header mb-2">Products</a>
 
           {products.map((value, index) => {
@@ -110,15 +116,17 @@ const Waitlist = () => {
 
         <div className="joinWaitlist">
           <div className="center-content">
-            <span className="joinWaitlistText mb-2">Join our Waitlist</span>
-            <a className="text-white mb-2">
+            <span className=" joinWaitlistText m-2">Join our Waitlist</span>
+            <a className="text-white m-2">
               Sign up to receive early updates on announcements, testnet, new
               collections
             </a>
 
-            <div className="m-4">
-              <input className="input m-1" placeholder="Email address" />
-              <button className="submit-button m-1">
+         
+
+            <div className=" waitlistEmail mt-4 mb-4">
+              <input className="input m-3" placeholder="Email address" />
+              <button className="submit-button m-1 mt-3">
                 <span className="button-text submit-text">Submit</span>
               </button>
             </div>
