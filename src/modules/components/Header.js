@@ -3,19 +3,17 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
-
+import logo from "../../assets/imgs/logo.png";
+import menu from "../../assets/menu.png";
 const Header = () => (
   <div className="header">
-    <div>
+    <div className="d-none d-lg-block">
       <Row style={styles.row}>
         <Col xs={12} md={8} style={styles.col}>
           <div
             style={{ display: "flex", flexDirection: "column", marginLeft: 0 }}
           >
-            <img
-              src={"/assets/logo.svg"}
-              style={{ width: 145, height: 46, marginLeft: 0 }}
-            />
+            <img src={logo} style={{ width: 145, height: 46, marginLeft: 0 }} />
           </div>
         </Col>
 
@@ -24,7 +22,7 @@ const Header = () => (
             ...styles.col2,
           }}
         >
-          <div style={{display:'flex'}}>
+          <div style={{ display: "flex" }}>
             <button>
               <span className="button-text">Blog</span>
             </button>
@@ -34,6 +32,20 @@ const Header = () => (
           </div>
         </Col>
       </Row>
+    </div>
+
+    <div className="d-lg-none p-2">
+
+      <div  style ={{display:'flex', alignItems:'center', justifyContent:'space-between'}}>
+        <div>
+        <img src={logo} style={{ width: 85, height: 27, marginLeft: 0 }} />
+        </div>
+
+        <div>
+        <img src={menu} style={{ width: 20, height: 14, marginLeft: 0 }} />
+        </div>
+      </div>
+    
     </div>
   </div>
 );

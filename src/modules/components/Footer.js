@@ -2,6 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import logo from "../../assets/imgs/logo.png";
 
 const Footer = () => (
   <div className="footer">
@@ -13,7 +14,7 @@ const Footer = () => (
           >
             <div>
               <img
-                src={"/assets/logo.svg"}
+                src={logo}
                 style={{ height: 46, marginLeft: 0 }}
               />
             </div>
@@ -48,7 +49,7 @@ const Footer = () => (
         </Col>
       </Row>
 
-      <div>
+      <div className="pt-3">
         <p className="footer-logo-text" style={styles.copyRight}>
           &copy; {new Date().getFullYear()} aurals. All Rights Reserved
         </p>
@@ -83,7 +84,7 @@ const styles = {
   followUS: {
     color: "#3F043F",
     fontWeight: "700",
-    fontSize: 23,
+    fontSize: 24.87,
   },
   copyRight: {
     color: "#3F043F",
