@@ -51,23 +51,27 @@ const Waitlist = () => {
     <>
       <Header />
       <div className="pageBody">
-        <div className="intro">
-          <div className="intro-content">
-            <div className="m-4">
-              <span className="joinWaitlistText mb-2">LAUNCHING SOON</span>
-              <span className="intro-subText">
-                A Decentralized Music Ecosystem For Music Creatives And
-                Collectors
-              </span>
+        <div className="intro d-flex justify-content-center">
+          <div className="intro-content flex-lg-nowrap">
+            <div className="m-2 ">
+              <div style={{width:'80%'}}>
+                <p className="intro-header  text-lg-start mb-2">
+                  LAUNCHING SOON
+                </p>
+                <p className="intro-subText text-lg-start">
+                  A Decentralized Music Ecosystem For Music Creatives And
+                  Collectors
+                </p>
+              </div>
             </div>
 
-            <div className="m-5">
-              <div style={{ position: "relative", left: 0, top: 0 }}>
-                <div style={{ background: "red", margin: "10%" }}>
-                  <img src={NFT1} class="another-rec" />
+            <div className="m-2">
+              <div style={{ position: "relative" }}>
+                <div style={{ background: "red" }}>
+                  <img src={NFT1} className="another-rec" />
                 </div>
                 <div></div>
-                <img src={NFT2} class="rect" />
+                <img src={NFT2} className="rect" />
               </div>
             </div>
 
@@ -80,7 +84,7 @@ const Waitlist = () => {
           </div>
         </div>
 
-        <img src={Musics} class="musics" />
+        <img src={Musics} style={{ width: "15%" }} className="musics" />
 
         <div className="products mt-5 mb-5 ms-3 me-3">
           <a className="products-header mb-2">Products</a>
@@ -121,8 +125,6 @@ const Waitlist = () => {
               Sign up to receive early updates on announcements, testnet, new
               collections
             </a>
-
-         
 
             <div className=" waitlistEmail mt-4 mb-4">
               <input className="input m-3" placeholder="Email address" />
