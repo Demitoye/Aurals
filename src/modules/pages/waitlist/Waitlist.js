@@ -29,21 +29,21 @@ const Waitlist = () => {
     },
     {
       title: "AURALS NFTS",
-      desc: "",
+      desc: "Owning a NFT minted on Aurals grants you access to various benefits such as royalties, discounted or free tickets to shows and events, exclusive merchandise, access to music files and a lot of other perks and utilities.",
     },
     {
       title: "AURALS TOKEN",
-      desc: "",
+      desc: "Earn royalties in $aurals token for holding Aurals NFTs. Get airdropped tokens by performing tasks such as testnet, streaming music. Spend $aurals token in our virtual music gallery.",
     },
 
     {
       title: "AURALS STREAMING PLATFORM",
-      desc: "",
+      desc: "Listen and stream music from your favorite artistes in web3 and earn $aurals token as reward.",
     },
 
     {
       title: "METAVERSE: VIRTUAL MUSIC GALLERY",
-      desc: "",
+      desc: "Attend your favorite artistes concerts and festivals at our virtual music gallery. Buy auctioned 1/1 music exhibitions hosted your favorite artistes with $aurals token",
     },
   ];
 
@@ -53,8 +53,8 @@ const Waitlist = () => {
       <div className="pageBody">
         <div className="intro d-flex justify-content-center">
           <div className="intro-content flex-lg-nowrap">
-            <div className="m-2 ">
-              <div style={{width:'80%'}}>
+            <div className="m-2  mb-4 group-text ">
+              <div>
                 <p className="intro-header  text-lg-start mb-2">
                   LAUNCHING SOON
                 </p>
@@ -65,13 +65,45 @@ const Waitlist = () => {
               </div>
             </div>
 
-            <div className="m-2">
-              <div style={{ position: "relative" }}>
-                <div style={{ background: "red" }}>
-                  <img src={NFT1} className="another-rec" />
+            <div className=" group m-4">
+              <div style={{ position: "relative", margin: 0 }}>
+                <div className="nfts slide1">
+                  <div>
+                    <a className="nfts-title">Troy Ape collection</a>
+                    <a className="nfts-owner">@tonyti</a>
+                  </div>
+                  <div>
+                    <img src={NFT1} className="nft-image" />
+                  </div>
+                  <div>
+                    <a className="nft-timer"> 23h : 41m : 11s </a>
+                    <a className="nft-price">23.09 ETH </a>
+                  </div>
+                  <div>
+                    <a className="time-label">Remaining time</a>
+                    <a className="bid-label">Highest bid</a>
+                  </div>
                 </div>
-                <div></div>
-                <img src={NFT2} className="rect" />
+
+                <div className="nfts slide2">
+                  <div>
+                    <a className="nfts-title">Troy Ape collection</a>
+                    <a className="nfts-owner">@tonyti</a>
+                  </div>
+                  <div>
+                    <img src={NFT2} className="nft-image" />
+                  </div>
+                  <div>
+                    <a className="nft-timer"> 23h : 41m : 11s </a>
+                    <a className="nft-price">23.09 ETH </a>
+                  </div>
+                  <div>
+                    <a className="time-label">Remaining time</a>
+                    <a className="bid-label">Highest bid</a>
+                  </div>
+                </div>
+
+                <div>{/* <img src={NFT2} className="rect" /> */}</div>
               </div>
             </div>
 

@@ -187,10 +187,9 @@ input {
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  /* line-height: 148.99%; */
+  font-size: 18px;
+  line-height: 148.99%;
   /* or 27px */
-
   color: #3d3d3d;
 }
 .products-arrow {
@@ -212,13 +211,23 @@ input {
   padding-bottom: 1%;
 }
 
+.group-text {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
 .intro-content {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
+  display: flex;
+  align-content: center;
+  justify-content: center;
   height: 100%;
-  margin: 5%;
+  margin: 2%;
+  padding: 3%;
   /* width: 40vw; */
 
   /* display: flex;
@@ -259,21 +268,137 @@ input {
   /* width: 100%; */
 }
 
-.rect {
-  position: relative;
-  top: 0px;
-  left: -10%;
-  width: 291.7px;
-  /* height: 445.09px; */
+.group {
+  margin-right: 10% !important;
 }
-.another-rec {
+.nfts {
+  height: 100%;
+  background: linear-gradient(180deg, #d9042d 0%, #91033b 47.4%, #520651 100%);
+  box-shadow: 0px 17.6583px 26.4875px rgba(0, 0, 0, 0.3);
+
   position: absolute;
-  top: 10%;
-  left: 10%;
   width: 291.7px;
-  /* height: 445.09px; */
+  min-height: 445.09px;
+  left: 783px;
+  top: 128px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* nn */
+
+  background: linear-gradient(180deg, #d9042d 0%, #91033b 47.4%, #520651 100%);
+  box-shadow: 0px 17.6583px 26.4875px rgba(0, 0, 0, 0.3);
+}
+.slide1 {
+  position: absolute;
+  top: 15%;
+  left: 30%;
 }
 
+.slide2 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.nft-image {
+  position: absolute;
+  width: 88%;
+  left: 5.88%;
+  top: 11%;
+}
+
+.nfts-title {
+  position: absolute;
+  width: 121px;
+  height: 20px;
+  max-width: 60%;
+  left: 5%;
+  top: 4.6%;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13.11px;
+  line-height: 148.99%;
+  color: #ffffff;
+}
+.nfts-owner {
+  position: absolute;
+  width: 41px;
+  height: 18px;
+  left: 80.2%;
+  top: 5%;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11.799px;
+  line-height: 148.99%;
+  color: #ffffff;
+}
+
+.nft-timer {
+  position: absolute;
+  max-width: 60%;
+  height: 21px;
+  left: 5.5%;
+  top: 85.5%;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.421px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.time-label {
+  position: absolute;
+  width: 83px;
+  height: 18px;
+  left: 16.39px;
+  top: 90.8%;
+
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11.799px;
+  line-height: 148.99%;
+  /* identical to box height, or 18px */
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.nft-price {
+  position: absolute;
+  max-width: 40%;
+  height: 21px;
+  left: 66%;
+  top: 85.5%;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.421px;
+  line-height: 21px;
+  text-align: right;
+  color: #ffffff;
+}
+
+.bid-label {
+  position: absolute;
+  width: 60px;
+  height: 18px;
+  left: 72.8%;
+  top: 90.8%;
+
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11.799px;
+  line-height: 148.99%;
+
+  text-align: right;
+
+  color: rgba(255, 255, 255, 0.6);
+}
 .musics {
   /* height: 10rem; */
   margin-top: -8%;
