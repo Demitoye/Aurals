@@ -9,7 +9,7 @@ const Header = () => (
   <div className="header">
     <div className="d-none d-lg-block">
       <Row style={styles.row}>
-        <Col xs={12} md={8} style={styles.col}>
+        <Col xs={10} md={6} style={styles.col}>
           <div
             style={{ display: "flex", flexDirection: "column", marginLeft: 0 }}
           >
@@ -35,17 +35,21 @@ const Header = () => (
     </div>
 
     <div className="d-lg-none p-2">
-
-      <div  style ={{display:'flex', alignItems:'center', justifyContent:'space-between'}}>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+        }}
+      >
         <div>
-        <img src={logo} style={{ width: 85, height: 27, marginLeft: 0 }} />
+          <img src={logo} style={{ width: 85, height: 27, marginLeft: 0 }} />
         </div>
 
         <div>
-        <img src={menu} style={{ width: 20, height: 14, marginLeft: 0 }} />
+          <img src={menu} style={{ width: 20, height: 14, marginLeft: 0 }} />
         </div>
       </div>
-    
     </div>
   </div>
 );
@@ -71,7 +75,7 @@ const styles = {
     paddingLeft: 0,
     paddingRight: 0,
     display: "flex",
-    justifyContent: "center",
+    justifyContent: "flex-end",
     alignItems: "center",
   },
 };
