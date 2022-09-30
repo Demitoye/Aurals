@@ -116,7 +116,7 @@ const Waitlist = () => {
             </div>
 
             <div
-              className="d-lg-none mt-4 mb-2"
+              className="d-lg-none mt-5 mb-2"
               style={{ position: "relative", marginLeft: "20%" }}
             >
               <div className="nft-collection m-2 slider1">
@@ -126,7 +126,7 @@ const Waitlist = () => {
                 </div>
 
                 <div className="mb-2">
-                  <img style={{}} width={145.59} src={NFT2} />
+                  <img style={{}} width={145.59} height= {176.26} src={NFT2} />
                 </div>
 
                 <div className="space-between ">
@@ -149,7 +149,7 @@ const Waitlist = () => {
                 </div>
 
                 <div className="mb-2">
-                  <img style={{}} width={"100%"} height={250} src={NFT1} />
+                  <img style={{}} width={145.59} height={176.26} src={NFT1} />
                 </div>
 
                 <div className="space-between ">
