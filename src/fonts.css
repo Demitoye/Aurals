@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Rota-Light"; /*Can be any text*/
+  src: local("RotaLight"),
+    url("./assets/fonts/Rota-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Rota-Regular"; /*Can be any text*/
+  src: local("RotaRegular"),
+    url("./assets/fonts/Rota-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Rota-Thick"; /*Can be any text*/
+  src: local("Rota-Thick"),
+    url("./assets/fonts/Rota-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: "Rota-ExtraBold"; /*Can be any text*/
+    src: local("Rota-ExtraBold"),
+      url("./assets/fonts/Rota-ExtraBold.otf") format("opentype");
+  }
+
+

@@ -9,11 +9,14 @@ body {
   /* align-content: center;
   
   */
-  width: 100vw;
-  max-width: 1400px;  
+  /* width: 100vw; */
+  max-width: 1500px;
   align-content: center;
   margin: 0 auto;
   position: relative;
+}
+a:hover {
+  color: white;
 }
 
 .header {
