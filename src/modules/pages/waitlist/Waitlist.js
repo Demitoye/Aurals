@@ -6,6 +6,7 @@ import Up from "../../../assets/arrowUp.svg";
 import Down from "../../../assets/arrowDown.svg";
 import NFT1 from "../../../assets/imgs/NFT.png";
 import NFT2 from "../../../assets/imgs/NFT2.png";
+import eth from "../../../assets/imgs/ethereum.png";
 import Musics from "../../../assets/imgs/music.png";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -65,19 +66,26 @@ const Waitlist = () => {
               </div>
             </div>
 
-            <div className=" group m-4">
-              <div style={{ position: "relative", margin: 0 }}>
-                <div className="nfts slide1">
+            <div className="d-none d-lg-block group m-4 mt-0">
+              <div style={{ position: "relative", marginTop: "-5%" }}>
+                <div
+                  className="nfts slide1"
+                  style={{ display: "flex", flexDirection: "column" }}
+                >
                   <div>
                     <a className="nfts-title">Troy Ape collection</a>
                     <a className="nfts-owner">@tonyti</a>
                   </div>
+
                   <div>
-                    <img src={NFT1} className="nft-image" />
+                    <img src={NFT2} className="nft-image" />
                   </div>
+
                   <div>
                     <a className="nft-timer"> 23h : 41m : 11s </a>
-                    <a className="nft-price">23.09 ETH </a>
+                    <a className="nft-price">
+                      23.09 ETH <img src={eth} height={14} />{" "}
+                    </a>
                   </div>
                   <div>
                     <a className="time-label">Remaining time</a>
@@ -91,28 +99,73 @@ const Waitlist = () => {
                     <a className="nfts-owner">@tonyti</a>
                   </div>
                   <div>
-                    <img src={NFT2} className="nft-image" />
+                    <img src={NFT1} className="nft-image" />
                   </div>
                   <div>
                     <a className="nft-timer"> 23h : 41m : 11s </a>
-                    <a className="nft-price">23.09 ETH </a>
+                    <a className="nft-price">
+                      23.09 ETH <img src={eth} height={14} />{" "}
+                    </a>
                   </div>
                   <div>
                     <a className="time-label">Remaining time</a>
                     <a className="bid-label">Highest bid</a>
                   </div>
                 </div>
-
-                <div>{/* <img src={NFT2} className="rect" /> */}</div>
               </div>
             </div>
 
-            {/* <div className="m-4">
-              <input className="input m-1" placeholder="Email address" />
-              <button className="submit-button m-1">
-                <span className="button-text submit-text">Submit</span>
-              </button>
-            </div> */}
+            <div
+              className="d-lg-none mt-4 mb-2"
+              style={{ position: "relative", marginLeft: "20%" }}
+            >
+              <div className="nft-collection m-2 slider1">
+                <div className="space-between mb-2">
+                  <a className="collection-title">Troy Ape collection</a>
+                  <a className="collection-owner">@tonyti</a>
+                </div>
+
+                <div className="mb-2">
+                  <img style={{}} width={"100%"} height={250} src={NFT2} />
+                </div>
+
+                <div className="space-between ">
+                  <a className="timer">23h : 41m : 11s</a>
+                  <a className="price">
+                    23.09 ETH {''}<img src={eth} height={14} />
+                  </a>
+                </div>
+
+                <div className="space-between">
+                  <a className="label">Remaining time</a>
+                  <a className="label">Highest bid</a>
+                </div>
+              </div>
+
+              <div className="nft-collection m-2 slider2">
+                <div className="space-between mb-2">
+                  <a className="collection-title">Troy Ape collection</a>
+                  <a className="collection-owner">@tonyti</a>
+                </div>
+
+                <div className="mb-2">
+                  <img style={{}} width={"100%"} height={250} src={NFT1} />
+                </div>
+
+                <div className="space-between ">
+                  <a className="timer">23h : 41m : 11s</a>
+                  <a className="price">
+                    23.09 ETH <img src={eth} height={14} />
+                  
+                  </a>
+                </div>
+
+                <div className="space-between mb-2">
+                  <a className="label">Remaining time</a>
+                  <a className="label">Highest bid</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
