@@ -63,7 +63,9 @@ a {
 }
 
 @media screen and (max-width: 780px) {
-  
+  .joinWaitlistText {
+    font-size: 1.875rem;
+  }
 }
 
 input {
