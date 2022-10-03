@@ -19,7 +19,7 @@ const Footer = () => (
               />
             </div>
 
-            <span>
+            <span className="mt-3">
               <p className="footer-logo-text">
                 Lorem lorem lorem lorem lorem lorem
               </p>
@@ -83,11 +83,13 @@ const styles = {
   },
   followUS: {
     color: "#3F043F",
+    fontFamily:'Rota-ExtraBold',
     fontWeight: "700",
-    fontSize: 24.87,
+    fontSize: 20,
   },
   copyRight: {
     color: "#3F043F",
+      fontFamily:'Rota-ExtraBold',
     fontWeight: "700",
     fontSize: 15,
   },

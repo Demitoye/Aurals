@@ -47,14 +47,22 @@ a:hover {
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 148.99%;
   /* or 27px */
   display: flex;
   align-items: flex-end;
   color: #3d3d3d;
 }
-
+@media screen and (max-width: 780px) {
+  .footer-logo-text {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 148.99%;
+  }
+}
 button {
   background-color: white;
   border-color: linear-gradient(
