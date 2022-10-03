@@ -65,6 +65,13 @@ a {
 @media screen and (max-width: 780px) {
   .joinWaitlistText {
     font-size: 1.875rem;
+    line-height: 37px;
+  }
+
+  .text-white {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 130.99%;
   }
 }
 
@@ -123,6 +130,17 @@ input {
   font-weight: 500;
   font-size: 22px;
   line-height: 33px;
+}
+
+@media screen and (max-width: 780px) {
+  .input {
+    font-size: 1.125rem;
+    width: 214px;
+  }
+
+  .submit-text {
+    font-size: 1.125rem;
+  }
 }
 
 .products {
