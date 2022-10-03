@@ -23,12 +23,12 @@ const Header = () => (
           }}
         >
           <div style={{ display: "flex" }}>
-            <button>
+            {/* <button>
               <span className="button-text">Blog</span>
             </button>
             <button className="button-alt">
               <span className="button-text-alt">Roadmap</span>
-            </button>
+            </button> */}
           </div>
         </Col>
       </Row>
@@ -47,7 +47,7 @@ const Header = () => (
         </div>
 
         <div>
-          <img src={menu} style={{ width: 20, height: 14, marginLeft: 0 }} />
+          {/* <img src={menu} style={{ width: 20, height: 14, marginLeft: 0 }} /> */}
         </div>
       </div>
     </div>

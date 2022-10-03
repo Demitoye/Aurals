@@ -84,7 +84,7 @@ const Waitlist = () => {
                   <div>
                     <a className="nft-timer"> 23h : 41m : 11s </a>
                     <a className="nft-price">
-                      23.09 ETH <img src={eth} height={14} />{" "}
+                      23.09 ETH <img src={eth} height={13} />{" "}
                     </a>
                   </div>
                   <div>
@@ -104,7 +104,7 @@ const Waitlist = () => {
                   <div>
                     <a className="nft-timer"> 23h : 41m : 11s </a>
                     <a className="nft-price">
-                      23.09 ETH <img src={eth} height={14} />{" "}
+                      23.09 ETH <img src={eth} height={13} />{" "}
                     </a>
                   </div>
                   <div>
@@ -126,13 +126,14 @@ const Waitlist = () => {
                 </div>
 
                 <div className="mb-2">
-                  <img style={{}} width={176.26}  src={NFT2} />
+                  <img style={{}} width={176.26} src={NFT2} />
                 </div>
 
                 <div className="space-between ">
                   <a className="timer">23h : 41m : 11s</a>
                   <a className="price">
-                    23.09 ETH {''}<img src={eth} height={14} />
+                    23.09 ETH {""}
+                    <img src={eth} height={13} />
                   </a>
                 </div>
 
@@ -149,14 +150,13 @@ const Waitlist = () => {
                 </div>
 
                 <div className="mb-2">
-                  <img style={{}} width={176.26}  src={NFT1} />
+                  <img style={{}} width={176.26} src={NFT1} />
                 </div>
 
                 <div className="space-between ">
                   <a className="timer">23h : 41m : 11s</a>
                   <a className="price">
-                    23.09 ETH <img src={eth} height={14} />
-                  
+                    23.09 ETH <img src={eth} height={13} />
                   </a>
                 </div>
 
@@ -176,12 +176,16 @@ const Waitlist = () => {
 
           {products.map((value, index) => {
             return (
-              <div key={index} className="products-info p-4 m mb-4">
+              <div
+                key={index}
+                className="products-info p-4 m mb-4"
+                onClick={() => handleProducts(index)}
+              >
                 <div
                   className=""
                   style={{ display: "flex", flexDirection: "column" }}
                 >
-                  <div>
+                  <div >
                     <a className="products-text">{value.title} </a>
                   </div>
 
@@ -195,7 +199,7 @@ const Waitlist = () => {
                   <img
                     src={arrow && productNo === index ? Down : Up}
                     className="products-arrow"
-                    onClick={() => handleProducts(index)}
+                    // onClick={() => handleProducts(index)}
                   />
                 </div>
               </div>
