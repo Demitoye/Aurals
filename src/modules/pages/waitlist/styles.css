@@ -62,6 +62,10 @@ a {
   color: #ffffff;
 }
 
+@media screen and (max-width: 780px) {
+  
+}
+
 input {
   color: rgba(109, 20, 74, 0.57);
   border-radius: 40px;
@@ -191,6 +195,19 @@ input {
   width: 22px;
 }
 
+@media screen and (max-width: 780px) {
+  .products-header {
+    font-size: 1.5625rem;
+  }
+  .products-text {
+    font-size: 1rem;
+  }
+
+  .products-description {
+    font-size: 0.6875rem;
+  }
+}
+
 .intro {
   background-image: linear-gradient(
     180deg,
@@ -260,6 +277,15 @@ input {
   text-align: center;
   /* width: 100%; */
 }
+@media screen and (max-width: 780px) {
+  .intro-header {
+    font-size: 1.5625rem;
+  }
+
+  .intro-subText {
+    font-size: 1.25rem;
+  }
+}
 
 .group {
   margin-right: 10% !important;
@@ -303,7 +329,7 @@ input {
   font-family: "Arial";
   font-style: normal;
   font-weight: 700;
-  font-size: 0.8rem;;
+  font-size: 0.8rem;
   line-height: 148.99%;
 }
 .space-between {
@@ -350,6 +376,7 @@ input {
 
 .slider1 {
   position: relative;
+  margin-left: -10% !important;
 }
 
 .slider2 {
