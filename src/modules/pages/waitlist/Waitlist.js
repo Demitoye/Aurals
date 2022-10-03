@@ -126,7 +126,7 @@ const Waitlist = () => {
                 </div>
 
                 <div className="mb-2">
-                  <img style={{}} width={145.59} height= {176.26} src={NFT2} />
+                  <img style={{}} width={176.26}  src={NFT2} />
                 </div>
 
                 <div className="space-between ">
@@ -149,7 +149,7 @@ const Waitlist = () => {
                 </div>
 
                 <div className="mb-2">
-                  <img style={{}} width={145.59} height={176.26} src={NFT1} />
+                  <img style={{}} width={176.26}  src={NFT1} />
                 </div>
 
                 <div className="space-between ">
