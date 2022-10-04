@@ -21,7 +21,7 @@ const Footer = () => (
 
             <span className="mt-3">
               <p className="footer-logo-text">
-                Lorem lorem lorem lorem lorem lorem
+              The decentralised music ecosystem
               </p>
             </span>
           </div>
