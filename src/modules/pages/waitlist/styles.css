@@ -43,7 +43,7 @@ a {
 }
 .text-white {
   color: white;
-  font-family: "Arial";
+  font-family: "Rota-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 1.375rem;
@@ -180,7 +180,7 @@ input {
 }
 
 .products-text {
-  font-family: "Rota";
+  font-family: "Rota-Thick";
   font-style: normal;
   font-weight: 600;
   font-size: 1.75rem;
@@ -200,7 +200,7 @@ input {
 }
 
 .products-description {
-  font-family: "Arial";
+  font-family: "Rota-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 1.125rem;
@@ -346,7 +346,7 @@ input {
 }
 .collection-title {
   color: #ffffff;
-  font-family: "Arial";
+  font-family: "Rota-Thick";
   font-style: normal;
   font-weight: 700;
   font-size: 0.8rem;
@@ -359,7 +359,7 @@ input {
 
 .collection-owner {
   color: #ffffff;
-  font-family: "Arial";
+  font-family: "Rota-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 0.7rem;
@@ -368,14 +368,14 @@ input {
 
 .timer {
   color: #ffffff;
-  font-family: "Arial";
+  font-family: "Rota-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 9.12922px;
   line-height: 12px;
 }
 .price {
-  font-family: "Arial";
+  font-family: "Rota-Regular";
   font-style: normal;
   font-weight: 400;
   color: #ffffff;
@@ -384,7 +384,7 @@ input {
   text-align: right;
 }
 .label {
-  font-family: "Arial";
+  font-family: "Rota-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 7.65118px;
@@ -493,7 +493,7 @@ input {
   max-width: 60%;
   left: 5%;
   top: 4.6%;
-  font-family: "Arial";
+  font-family: "Rota-Thick";
   font-style: normal;
   font-weight: 700;
   font-size: 0.8125rem;
@@ -506,7 +506,7 @@ input {
   height: 18px;
   left: 80.2%;
   top: 5%;
-  font-family: "Arial";
+  font-family: "Rota-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 0.725rem;
@@ -520,7 +520,7 @@ input {
   height: 21px;
   left: 5.5%;
   top: 85.5%;
-  font-family: "Arial";
+  font-family: "Rota-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 0.9rem;
@@ -534,7 +534,7 @@ input {
   left: 16.39px;
   top: 90.8%;
 
-  font-family: "Arial";
+  font-family: "Rota-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 0.725rem;
@@ -550,7 +550,7 @@ input {
   height: 21px;
   left: 66%;
   top: 85.5%;
-  font-family: "Arial";
+  font-family: "Rota-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 0.9rem;
@@ -566,7 +566,7 @@ input {
   left: 72.8%;
   top: 90.8%;
 
-  font-family: "Arial";
+  font-family: "Rota-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 0.725rem;
