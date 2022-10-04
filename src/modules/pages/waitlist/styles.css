@@ -82,7 +82,7 @@ input {
   border: white;
   border-style: solid;
   outline: none;
-  font-family: "Poppins";
+  font-family: "Rota-Regular";
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
@@ -125,7 +125,7 @@ input {
   border-radius: 40px;
 }
 .submit-text {
-  font-family: "Poppins";
+  font-family: "Rota-Regular";
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
