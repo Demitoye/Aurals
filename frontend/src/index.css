@@ -44,7 +44,7 @@ a:hover {
   height: 3.5rem;
 }
 .footer-logo-text {
-  font-family: "Arial";
+  font-family: "Rota-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -56,7 +56,7 @@ a:hover {
 }
 @media screen and (max-width: 780px) {
   .footer-logo-text {
-    font-family: "Arial";
+    font-family: "Rota-Regular";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;

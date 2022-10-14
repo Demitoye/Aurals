@@ -201,7 +201,7 @@ const Waitlist = () => {
                 </div>
                 <div className="me-3 ms-3">
                   <img
-                    src={arrow && productNo === index ? Down : Up}
+                    src={arrow && productNo === index ? Up : Down}
                     className="products-arrow"
                     // onClick={() => handleProducts(index)}
                   />

@@ -43,7 +43,7 @@ a {
 }
 .text-white {
   color: white;
-  font-family: "Arial";
+  font-family: "Rota-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 1.375rem;
@@ -82,7 +82,7 @@ input {
   border: white;
   border-style: solid;
   outline: none;
-  font-family: "Poppins";
+  font-family: "Rota-Regular";
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
@@ -125,7 +125,7 @@ input {
   border-radius: 40px;
 }
 .submit-text {
-  font-family: "Poppins";
+  font-family: "Rota-Regular";
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
@@ -180,7 +180,7 @@ input {
 }
 
 .products-text {
-  font-family: "Rota";
+  font-family: "Rota-Thick";
   font-style: normal;
   font-weight: 600;
   font-size: 1.75rem;
@@ -200,7 +200,7 @@ input {
 }
 
 .products-description {
-  font-family: "Arial";
+  font-family: "Rota-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 1.125rem;
@@ -217,14 +217,14 @@ input {
 
 @media screen and (max-width: 780px) {
   .products-header {
-    font-size: 1.5625rem;
+    font-size: 2.1625rem;
   }
   .products-text {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   .products-description {
-    font-size: 0.6875rem;
+    font-size: 0.9875rem;
   }
 }
 
@@ -346,7 +346,7 @@ input {
 }
 .collection-title {
   color: #ffffff;
-  font-family: "Arial";
+  font-family: "Rota-Thick";
   font-style: normal;
   font-weight: 700;
   font-size: 0.8rem;
@@ -359,7 +359,7 @@ input {
 
 .collection-owner {
   color: #ffffff;
-  font-family: "Arial";
+  font-family: "Rota-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 0.7rem;
@@ -368,14 +368,14 @@ input {
 
 .timer {
   color: #ffffff;
-  font-family: "Arial";
+  font-family: "Rota-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 9.12922px;
   line-height: 12px;
 }
 .price {
-  font-family: "Arial";
+  font-family: "Rota-Regular";
   font-style: normal;
   font-weight: 400;
   color: #ffffff;
@@ -384,7 +384,7 @@ input {
   text-align: right;
 }
 .label {
-  font-family: "Arial";
+  font-family: "Rota-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 7.65118px;
@@ -396,7 +396,7 @@ input {
 
 .slider1 {
   position: relative;
-  margin-left: -10% !important;
+  margin-left: -5% !important;
 }
 
 .slider2 {
@@ -493,7 +493,7 @@ input {
   max-width: 60%;
   left: 5%;
   top: 4.6%;
-  font-family: "Arial";
+  font-family: "Rota-Thick";
   font-style: normal;
   font-weight: 700;
   font-size: 0.8125rem;
@@ -506,7 +506,7 @@ input {
   height: 18px;
   left: 80.2%;
   top: 5%;
-  font-family: "Arial";
+  font-family: "Rota-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 0.725rem;
@@ -520,7 +520,7 @@ input {
   height: 21px;
   left: 5.5%;
   top: 85.5%;
-  font-family: "Arial";
+  font-family: "Rota-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 0.9rem;
@@ -534,7 +534,7 @@ input {
   left: 16.39px;
   top: 90.8%;
 
-  font-family: "Arial";
+  font-family: "Rota-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 0.725rem;
@@ -550,7 +550,7 @@ input {
   height: 21px;
   left: 66%;
   top: 85.5%;
-  font-family: "Arial";
+  font-family: "Rota-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 0.9rem;
@@ -566,7 +566,7 @@ input {
   left: 72.8%;
   top: 90.8%;
 
-  font-family: "Arial";
+  font-family: "Rota-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 0.725rem;
