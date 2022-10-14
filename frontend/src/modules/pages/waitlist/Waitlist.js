@@ -8,8 +8,7 @@ import NFT1 from "../../../assets/imgs/NFT.png";
 import NFT2 from "../../../assets/imgs/NFT2.png";
 import eth from "../../../assets/imgs/ethereum.png";
 import Musics from "../../../assets/imgs/music.png";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import Axios from "axios";
 
 const Waitlist = () => {
   const [arrow, setArrow] = useState(true);
@@ -21,6 +20,11 @@ const Waitlist = () => {
       setArrow(true);
       setProductNo(index);
     }
+  };
+  const [email, setEmail] = useState("");
+
+  const submitEmail = () => {
+    Axios.post("http://localhost:3000/api/create", { email: email });
   };
 
   const products = [
@@ -185,7 +189,7 @@ const Waitlist = () => {
                   className=""
                   style={{ display: "flex", flexDirection: "column" }}
                 >
-                  <div >
+                  <div>
                     <a className="products-text">{value.title} </a>
                   </div>
 
@@ -216,8 +220,14 @@ const Waitlist = () => {
             </a>
 
             <div className=" waitlistEmail mt-4 mb-4">
-              <input className="input m-3" placeholder="Email address" />
-              <button className="submit-button m-1 mt-3">
+              <input
+                className="input m-3"
+                placeholder="Email address"
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
+              />
+              <button className="submit-button m-1 mt-3" onClick={submitEmail}>
                 <span className="button-text submit-text">Submit</span>
               </button>
             </div>
