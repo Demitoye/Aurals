@@ -8,7 +8,7 @@ import NFT1 from "../../../assets/imgs/NFT.png";
 import NFT2 from "../../../assets/imgs/NFT2.png";
 import eth from "../../../assets/imgs/ethereum.png";
 import Musics from "../../../assets/imgs/music.png";
-import Axios from "axios";
+import axios from "axios";
 
 const Waitlist = () => {
   const [arrow, setArrow] = useState(true);
@@ -23,13 +23,25 @@ const Waitlist = () => {
   };
   const [email, setEmail] = useState("");
 
-  const submitEmail = () => {
+  var bodyFormData = new FormData();
 
-    // fetch(`/api/create`)
-    //   .then((response) => response.json())
-    //   .then((users) => console.log(users)); 3306
-    Axios.post("http://localhost:8000/api/create", { email: email });
-    setEmail('')
+  const submitEmail = () => {
+    bodyFormData.append("email", email);
+    axios({
+      method: "post",
+      url: "https://aurals.xyz/submitWaitlist.php",
+      data: bodyFormData,
+      headers: { "Content-Type": "multipart/form-data" },
+    })
+      .then(function (response) {
+        //handle success
+        console.log(response);
+        setEmail("");
+      })
+      .catch(function (response) {
+        //handle error
+        console.log(response);
+      });
   };
 
   const products = [
