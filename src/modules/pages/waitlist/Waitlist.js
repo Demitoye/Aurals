@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import "./styles.css";
@@ -26,6 +28,9 @@ const Waitlist = () => {
   var bodyFormData = new FormData();
 
   const submitEmail = () => {
+    if (email.trim().length === 0) {
+      return;
+    }
     bodyFormData.append("email", email);
     axios({
       method: "post",
@@ -36,6 +41,18 @@ const Waitlist = () => {
       .then(function (response) {
         //handle success
         console.log(response);
+
+        toast.success("Email Successfully submitted", {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+
         setEmail("");
       })
       .catch(function (response) {
