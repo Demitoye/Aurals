@@ -41,9 +41,9 @@ const Waitlist = () => {
       .then(function (response) {
         //handle success
         console.log(response);
-
-        toast.success("Email Successfully submitted", {
-          position: "top-center",
+        setEmail("");
+        toast.success("Email Submitted!", {
+          position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,
           closeOnClick: true,
@@ -52,8 +52,6 @@ const Waitlist = () => {
           progress: undefined,
           theme: "light",
         });
-
-        setEmail("");
       })
       .catch(function (response) {
         //handle error
@@ -260,6 +258,7 @@ const Waitlist = () => {
                 onChange={(e) => {
                   setEmail(e.target.value);
                 }}
+                value={email}
               />
               <button className="submit-button m-1 mt-3" onClick={submitEmail}>
                 <span className="button-text submit-text">Submit</span>
@@ -268,6 +267,7 @@ const Waitlist = () => {
           </div>
         </div>
       </div>
+      <ToastContainer/>
       <Footer />
     </>
   );
