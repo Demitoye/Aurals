@@ -6,6 +6,11 @@ const connection = mysql.createConnection({
   database: "u666203437_Aurals",
 });
 
+// host: process.env.MYSQL_HOST,
+// user: process.env.MYSQL_USER,
+// password: process.env.MYSQL_PWD,
+// database: process.env.MYSQL_DB,
+
 connection.connect((error) => {
   if (error) {
     console.log("Error connecting to the MySQL Database");

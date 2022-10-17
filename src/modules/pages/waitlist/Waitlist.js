@@ -24,7 +24,12 @@ const Waitlist = () => {
   const [email, setEmail] = useState("");
 
   const submitEmail = () => {
-    Axios.post("http://localhost:3000/api/create", { email: email });
+
+    // fetch(`/api/create`)
+    //   .then((response) => response.json())
+    //   .then((users) => console.log(users)); 3306
+    Axios.post("http://localhost:8000/api/create", { email: email });
+    setEmail('')
   };
 
   const products = [
