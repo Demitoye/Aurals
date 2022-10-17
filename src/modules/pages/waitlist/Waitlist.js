@@ -63,8 +63,8 @@ const Waitlist = () => {
 
   const products = [
     {
-      title: "MARKETPLACE",
-      desc: "On Aurals Marketplace, music artists can create, mint and sell their NFT collection at extremely low gas fees. This marketplace also isn’t only for NFTs sales but also other music products. With a unique perk, the entire commerce process is fully automated. Literally the best source of income for any music artist.",
+      title: "Aurals Marketplace",
+      desc: "On Aurals Marketplace, music artists can create, mint and sell their NFT collection at extremely low gas fees. This marketplace also isn’t only for NFTs sales but also other music products. With a unique perk - the entire commerce process is fully automated. Literally the best source of income for any music artist.",
     },
     {
       title: "AURALS NFTS",
