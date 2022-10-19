@@ -27,10 +27,31 @@ const Waitlist = () => {
 
   var bodyFormData = new FormData();
 
+  const validateEmail = (email) => {
+    const re =
+      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  };
+
   const submitEmail = () => {
     if (email.trim().length === 0) {
       return;
     }
+
+    if (!validateEmail(email)) {
+      toast.error("Invalid email address!", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+      return;
+    }
+
     bodyFormData.append("email", email);
     axios({
       method: "post",
@@ -267,7 +288,7 @@ const Waitlist = () => {
           </div>
         </div>
       </div>
-      <ToastContainer/>
+      <ToastContainer />
       <Footer />
     </>
   );
