@@ -55,13 +55,24 @@ const Footer = () => {
                   src={"/assets/twitter.svg"}
                   height={24}
                 />
-                <img src={"/assets/instagram.svg"} height={24} />
+                <img
+                  src={"/assets/instagram.svg"}
+                  height={24}
+                  style={{ marginLeft: "5%" }}
+                />
                 <img
                   onClick={() =>
                     openInNewTab("https://www.linkedin.com/company/aurals-xyz")
                   }
                   src={"/assets/linkdeln.svg"}
                   height={24}
+                  style={{ marginLeft: "5%" }}
+                />
+                <img
+                  onClick={() => openInNewTab("https://discord.gg/eFtD9Pea")}
+                  src={"/assets/discord.svg"}
+                  height={24}
+                  style={{ marginLeft: "5%" }}
                 />
               </div>
             </span>
