@@ -123,13 +123,30 @@ input {
   width: 179px;
   height: 63px;
   border-radius: 40px;
-}
+} 
 .submit-text {
   font-family: "Rota-Regular";
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
   line-height: 33px;
+}
+
+.submit-button:hover {
+  background-image: linear-gradient(
+    180deg,
+    #d9042d 0%,
+    #91033b 47.4%,
+    #520651 100%
+  );
+}
+.submit-text:hover {
+  font-family: "Rota-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: white;
 }
 
 @media screen and (max-width: 780px) {
